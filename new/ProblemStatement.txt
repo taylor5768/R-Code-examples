@@ -1,0 +1,61 @@
+(Background) According to a popular view of recognition memory, there is more than one way 
+to recognize a familiar person or object. Current models have focused on two specific processes. 
+To understand these processes, consider what might happen in the mind of an eyewitness to a 
+crime who is asked to identify a suspect in a police line-up. The first process is an effortful 
+“recollection,” in which something specific to the suspect is recalled, like the fact that he had a 
+scar on his jaw or was not wearing a hat. The second process is automatic and results in an 
+overall estimate of familiarity. Even if the suspect were not the perpetrator of the crime, the 
+suspect could still appear familiar to the witness but maybe not for the right reason.  
+Suppose that both the recollection and familiarity processes operate during eye-witness 
+identification. Suppose, further, that the witness has seen the suspect committing a crime. If the 
+witness recollects something specific about the perpetrator, which occurs with probability r, the 
+suspect will be positively identified. On the other hand, If the witness fails to recollect anything 
+about the perpetrator, s/he will then rely on feelings of familiarity to identify the suspect. If 
+familiarity is high, then the witness will say s/he has seen the suspect at the crime scene, and not 
+seen otherwise. Let the probability of high familiarity be f1. Similarly, in the case in which the 
+suspect did not commit the crime, if the witness recollects something specific about the suspect 
+not being present at the crime scene, which occurs with the same probability r, the suspect will 
+be positively identified as having been not involved in the crime. However, if the witness fails to 
+recollect anything about the suspect, s/he will then again rely on feelings of familiarity. If 
+familiarity is high, then the witness will say that s/he has seen the suspect at the crime scene and 
+not seen otherwise.  Let this probability of high familiarity for innocent suspects be f2, which is 
+expected to be smaller than f1–the probability of high similarity for those who actually 
+committed crimes. 
+(Experiment and Data) In order to test the above model of recognition memory, a psychologist 
+conducted an experiment. In particular, she was interested in investigating the possible effects of 
+aging on memory: it was hypothesized that recall performance would be worse for the old than 
+the young. She recruited three groups of participants for the experiment, 25 middle school kids, 
+25 college students and finally, 25 seniors of age 65 or older. In the experiment, each of the 75 
+participants watched a series of video clips in which someone was committing a minor crime 
+such as mugging a passer-by, intermixed with a different set of video clips with people on streets 
+but with no crimes being committed. Three weeks later, the participants returned to the 
+laboratory and were asked to identify 20 “suspects”, the half of which were taken from the 
+previously seen crime scenes and the other half were either unrelated or from the previously seen 
+but innocent scenes. All identification trials were conducted randomly and independently.  
+According to the aforementioned model and the researcher’s hypothesis, the probabilities of hit 
+(i.e., correct identification of guilty suspects) and false alarm (i.e., false identification of innocent 
+suspects as perpetrators) can be expressed for each experimental group in terms of the 
+corresponding model parameters as 
+Age group   Hit   False alarm 
+25 Middle school kids  r1 + (1-r1)f1  (1-r1)f2 
+25 College students  r2 + (1-r2)f1  (1-r2)f2 
+25 Seniors   r3 + (1-r3)f1  (1-r3)f2 
+ 3 
+ 
+along with predictions of ordinal relationships between the parameters as follows: {r1, r2} > r3 
+and f1 > f2.  
+The table below summarizes the experimental data collected: 
+Age group   Hit   False alarm 
+25 Middle school kids  227   34 
+25 College students  239   42 
+25 Seniors   217   71 
+ 
+In the table each cell shows the number of hit or false alarm responses out of 250 Bernoulli trials. 
+(Question) Do the data support the researcher’s hypothesis about the effects of aging on recall 
+performance? Answer this question by analyzing the data from a model selection perspective. 
+Specifically, evaluate the following five models by computing their AIC and BIC values: 
+Model 1:  r1, r2, r3, f1, f2 
+Model 2: r1=r2=r3, f1, f2 
+Model 3: r1, r2, r3, f1=f2 
+Model 4: r1=r2, r3, f1=f2 
+Model 5: r1=r2=r3, f1=f2 
